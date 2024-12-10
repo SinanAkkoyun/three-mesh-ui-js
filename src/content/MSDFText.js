@@ -1,5 +1,5 @@
 import { Mesh } from 'three';
-import { mergeBufferGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
+import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 
 import MSDFGlyph from './MSDFGlyph.js';
 
@@ -96,6 +96,7 @@ function buildText() {
 	const translatedGeom = [];
 
 	this.inlines.forEach( ( inline, i ) => {
+		// const font = this.getFontFamily() ?? 
 
 		translatedGeom[ i ] = new MSDFGlyph( inline, this.getFontFamily() );
 
@@ -103,7 +104,7 @@ function buildText() {
 
 	} );
 
-	const mergedGeom = mergeBufferGeometries( translatedGeom );
+	const mergedGeom = mergeGeometries( translatedGeom );
 
 	const mesh = new Mesh( mergedGeom, this.getFontMaterial() );
 

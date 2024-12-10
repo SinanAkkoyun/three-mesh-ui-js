@@ -36,91 +36,93 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "g1": () => (/* reexport */ AlignItems_namespaceObject),
-  "gO": () => (/* reexport */ Block),
-  "km": () => (/* reexport */ ContentDirection_namespaceObject),
-  "zV": () => (/* reexport */ core_FontLibrary),
-  "ol": () => (/* reexport */ InlineBlock),
-  "uM": () => (/* reexport */ JustifyContent_namespaceObject),
-  "N1": () => (/* reexport */ Keyboard),
-  "xv": () => (/* reexport */ Text),
-  "PH": () => (/* reexport */ TextAlign_namespaceObject),
-  "UH": () => (/* reexport */ Whitespace_namespaceObject),
-  "ZP": () => (/* binding */ three_mesh_ui),
-  "Vx": () => (/* binding */ update)
+  k2: () => (/* reexport */ AlignItems_namespaceObject),
+  eB: () => (/* reexport */ Block),
+  dJ: () => (/* reexport */ ContentDirection_namespaceObject),
+  VB: () => (/* reexport */ core_FontLibrary),
+  hW: () => (/* reexport */ InlineBlock),
+  A9: () => (/* reexport */ JustifyContent_namespaceObject),
+  s3: () => (/* reexport */ Keyboard),
+  EY: () => (/* reexport */ Text),
+  nO: () => (/* reexport */ TextAlign_namespaceObject),
+  Sw: () => (/* reexport */ Whitespace_namespaceObject),
+  Ay: () => (/* binding */ three_mesh_ui),
+  yo: () => (/* binding */ update)
 });
 
 // NAMESPACE OBJECT: ./src/utils/block-layout/ContentDirection.js
 var ContentDirection_namespaceObject = {};
 __webpack_require__.r(ContentDirection_namespaceObject);
 __webpack_require__.d(ContentDirection_namespaceObject, {
-  "COLUMN": () => (COLUMN),
-  "COLUMN_REVERSE": () => (COLUMN_REVERSE),
-  "ROW": () => (ROW),
-  "ROW_REVERSE": () => (ROW_REVERSE),
-  "contentDirection": () => (contentDirection)
+  COLUMN: () => (COLUMN),
+  COLUMN_REVERSE: () => (COLUMN_REVERSE),
+  ROW: () => (ROW),
+  ROW_REVERSE: () => (ROW_REVERSE),
+  contentDirection: () => (contentDirection)
 });
 
 // NAMESPACE OBJECT: ./src/utils/block-layout/AlignItems.js
 var AlignItems_namespaceObject = {};
 __webpack_require__.r(AlignItems_namespaceObject);
 __webpack_require__.d(AlignItems_namespaceObject, {
-  "CENTER": () => (CENTER),
-  "END": () => (END),
-  "START": () => (START),
-  "STRETCH": () => (STRETCH),
-  "alignItems": () => (alignItems),
-  "warnAboutDeprecatedAlignItems": () => (warnAboutDeprecatedAlignItems)
+  CENTER: () => (CENTER),
+  END: () => (END),
+  START: () => (START),
+  STRETCH: () => (STRETCH),
+  alignItems: () => (alignItems),
+  warnAboutDeprecatedAlignItems: () => (warnAboutDeprecatedAlignItems)
 });
 
 // NAMESPACE OBJECT: ./src/utils/block-layout/JustifyContent.js
 var JustifyContent_namespaceObject = {};
 __webpack_require__.r(JustifyContent_namespaceObject);
 __webpack_require__.d(JustifyContent_namespaceObject, {
-  "CENTER": () => (JustifyContent_CENTER),
-  "END": () => (JustifyContent_END),
-  "SPACE_AROUND": () => (SPACE_AROUND),
-  "SPACE_BETWEEN": () => (SPACE_BETWEEN),
-  "SPACE_EVENLY": () => (SPACE_EVENLY),
-  "START": () => (JustifyContent_START),
-  "justifyContent": () => (justifyContent)
+  CENTER: () => (JustifyContent_CENTER),
+  END: () => (JustifyContent_END),
+  SPACE_AROUND: () => (SPACE_AROUND),
+  SPACE_BETWEEN: () => (SPACE_BETWEEN),
+  SPACE_EVENLY: () => (SPACE_EVENLY),
+  START: () => (JustifyContent_START),
+  justifyContent: () => (justifyContent)
 });
 
 // NAMESPACE OBJECT: ./src/utils/inline-layout/Whitespace.js
 var Whitespace_namespaceObject = {};
 __webpack_require__.r(Whitespace_namespaceObject);
 __webpack_require__.d(Whitespace_namespaceObject, {
-  "NORMAL": () => (NORMAL),
-  "NOWRAP": () => (NOWRAP),
-  "PRE": () => (PRE),
-  "PRE_LINE": () => (PRE_LINE),
-  "PRE_WRAP": () => (PRE_WRAP),
-  "WHITE_CHARS": () => (WHITE_CHARS),
-  "collapseWhitespaceOnInlines": () => (collapseWhitespaceOnInlines),
-  "collapseWhitespaceOnString": () => (collapseWhitespaceOnString),
-  "newlineBreakability": () => (newlineBreakability),
-  "shouldBreak": () => (Whitespace_shouldBreak)
+  NORMAL: () => (NORMAL),
+  NOWRAP: () => (NOWRAP),
+  PRE: () => (PRE),
+  PRE_LINE: () => (PRE_LINE),
+  PRE_WRAP: () => (PRE_WRAP),
+  WHITE_CHARS: () => (WHITE_CHARS),
+  collapseWhitespaceOnInlines: () => (collapseWhitespaceOnInlines),
+  collapseWhitespaceOnString: () => (collapseWhitespaceOnString),
+  newlineBreakability: () => (newlineBreakability),
+  shouldBreak: () => (Whitespace_shouldBreak)
 });
 
 // NAMESPACE OBJECT: ./src/utils/inline-layout/TextAlign.js
 var TextAlign_namespaceObject = {};
 __webpack_require__.r(TextAlign_namespaceObject);
 __webpack_require__.d(TextAlign_namespaceObject, {
-  "CENTER": () => (TextAlign_CENTER),
-  "JUSTIFY": () => (JUSTIFY),
-  "JUSTIFY_CENTER": () => (JUSTIFY_CENTER),
-  "JUSTIFY_LEFT": () => (JUSTIFY_LEFT),
-  "JUSTIFY_RIGHT": () => (JUSTIFY_RIGHT),
-  "LEFT": () => (LEFT),
-  "RIGHT": () => (RIGHT),
-  "textAlign": () => (textAlign)
+  CENTER: () => (TextAlign_CENTER),
+  JUSTIFY: () => (JUSTIFY),
+  JUSTIFY_CENTER: () => (JUSTIFY_CENTER),
+  JUSTIFY_LEFT: () => (JUSTIFY_LEFT),
+  JUSTIFY_RIGHT: () => (JUSTIFY_RIGHT),
+  LEFT: () => (LEFT),
+  RIGHT: () => (RIGHT),
+  textAlign: () => (textAlign)
 });
 
-;// CONCATENATED MODULE: external "three"
-var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
-var y = x => () => x
-const external_three_namespaceObject = x({ ["BufferAttribute"]: () => __WEBPACK_EXTERNAL_MODULE_three__.BufferAttribute, ["BufferGeometry"]: () => __WEBPACK_EXTERNAL_MODULE_three__.BufferGeometry, ["CanvasTexture"]: () => __WEBPACK_EXTERNAL_MODULE_three__.CanvasTexture, ["Color"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Color, ["FileLoader"]: () => __WEBPACK_EXTERNAL_MODULE_three__.FileLoader, ["LinearFilter"]: () => __WEBPACK_EXTERNAL_MODULE_three__.LinearFilter, ["Mesh"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Mesh, ["Object3D"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Object3D, ["Plane"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Plane, ["PlaneGeometry"]: () => __WEBPACK_EXTERNAL_MODULE_three__.PlaneGeometry, ["ShaderMaterial"]: () => __WEBPACK_EXTERNAL_MODULE_three__.ShaderMaterial, ["TextureLoader"]: () => __WEBPACK_EXTERNAL_MODULE_three__.TextureLoader, ["Vector2"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Vector2, ["Vector3"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Vector3 });
-;// CONCATENATED MODULE: ./src/utils/block-layout/ContentDirection.js
+;// external "three"
+var x = (y) => {
+	var x = {}; __webpack_require__.d(x, y); return x
+} 
+var y = (x) => (() => (x))
+const external_three_namespaceObject = x({ ["BufferAttribute"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.BufferAttribute), ["BufferGeometry"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.BufferGeometry), ["CanvasTexture"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.CanvasTexture), ["Color"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.Color), ["FileLoader"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.FileLoader), ["LinearFilter"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.LinearFilter), ["Mesh"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.Mesh), ["Object3D"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.Object3D), ["Plane"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.Plane), ["PlaneGeometry"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.PlaneGeometry), ["ShaderMaterial"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.ShaderMaterial), ["TextureLoader"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.TextureLoader), ["Vector2"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.Vector2), ["Vector3"]: () => (__WEBPACK_EXTERNAL_MODULE_three__.Vector3) });
+;// ./src/utils/block-layout/ContentDirection.js
 const ROW = "row";
 const ROW_REVERSE = "row-reverse";
 const COLUMN = "column";
@@ -166,7 +168,7 @@ function contentDirection( container, DIRECTION, startPos, REVERSE ){
 
 }
 
-;// CONCATENATED MODULE: ./src/utils/block-layout/AlignItems.js
+;// ./src/utils/block-layout/AlignItems.js
 
 
 
@@ -272,7 +274,7 @@ const DEPRECATED_ALIGN_ITEMS = [
 ];
 
 
-;// CONCATENATED MODULE: ./src/utils/block-layout/JustifyContent.js
+;// ./src/utils/block-layout/JustifyContent.js
 const JustifyContent_START = "start";
 const JustifyContent_CENTER = "center";
 const JustifyContent_END = "end";
@@ -424,7 +426,7 @@ function _getJustificationMargin( items, spaceToDistribute, justification, rever
 
 }
 
-;// CONCATENATED MODULE: ./src/components/core/BoxComponent.js
+;// ./src/components/core/BoxComponent.js
 /**
 
 Job: Handle everything related to a BoxComponent element dimensioning and positioning
@@ -637,7 +639,7 @@ function BoxComponent( Base ) {
 }
 
 
-;// CONCATENATED MODULE: ./src/utils/inline-layout/Whitespace.js
+;// ./src/utils/inline-layout/Whitespace.js
 /**
  * @see https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace#whitespace_helper_functions
  *
@@ -949,7 +951,7 @@ function _shouldFriendlyBreak( prevChar, lastInlineOffset, nextBreak, options ) 
 
 }
 
-;// CONCATENATED MODULE: ./src/utils/inline-layout/TextAlign.js
+;// ./src/utils/inline-layout/TextAlign.js
 const LEFT = 'left';
 const RIGHT = 'right';
 const TextAlign_CENTER = 'center';
@@ -1076,7 +1078,7 @@ const _computeLineOffset = ( line, ALIGNMENT, INNER_WIDTH, lastLine ) => {
 
 };
 
-;// CONCATENATED MODULE: ./src/components/core/InlineManager.js
+;// ./src/components/core/InlineManager.js
 /**
 
 Job: Positioning inline elements according to their dimensions inside this component
@@ -1517,7 +1519,7 @@ function InlineManager( Base ) {
 
 }
 
-;// CONCATENATED MODULE: ./src/components/core/FontLibrary.js
+;// ./src/components/core/FontLibrary.js
 /*
 
 Job:
@@ -1759,7 +1761,7 @@ const FontLibrary = {
 
 /* harmony default export */ const core_FontLibrary = (FontLibrary);
 
-;// CONCATENATED MODULE: ./src/components/core/UpdateManager.js
+;// ./src/components/core/UpdateManager.js
 /**
  * Job:
  * - recording components required updates
@@ -1932,7 +1934,7 @@ class UpdateManager {
 UpdateManager.components = [];
 UpdateManager.requestedUpdates = {};
 
-;// CONCATENATED MODULE: ./src/utils/Defaults.js
+;// ./src/utils/Defaults.js
 
 
 
@@ -1999,7 +2001,7 @@ function getDefaultTexture() {
 
 }
 
-;// CONCATENATED MODULE: ./src/components/core/MeshUIComponent.js
+;// ./src/components/core/MeshUIComponent.js
 
 
 
@@ -2681,7 +2683,7 @@ function MeshUIComponent( Base ) {
 
 }
 
-;// CONCATENATED MODULE: ./src/components/core/MaterialManager.js
+;// ./src/components/core/MaterialManager.js
 /* eslint-disable camelcase */
 //@TODO: Get rid of non camelcase uniforms
 
@@ -2952,7 +2954,8 @@ float screenPxRange() {
 float tap(vec2 offsetUV) {
 	vec3 msd = texture( u_texture, offsetUV ).rgb;
 	float sd = median(msd.r, msd.g, msd.b);
-	float screenPxDistance = screenPxRange() * (sd - 0.5);
+	float thicknessOffset = -0.1; // Adjust this value for thinner fonts
+	float screenPxDistance = screenPxRange() * (sd - 0.5 + thicknessOffset);
 	float alpha = clamp(screenPxDistance + 0.5, 0.0, 1.0);
 	return alpha;
 }
@@ -3129,7 +3132,7 @@ void main() {
 }
 `;
 
-;// CONCATENATED MODULE: ./src/content/Frame.js
+;// ./src/content/Frame.js
 
 
 
@@ -3153,7 +3156,7 @@ class Frame extends external_three_namespaceObject.Mesh {
 
 }
 
-;// CONCATENATED MODULE: ./src/utils/mix.js
+;// ./src/utils/mix.js
 let _Base = null;
 
 /**
@@ -3194,7 +3197,7 @@ mix.withBase = ( Base ) => {
 
 };
 
-;// CONCATENATED MODULE: ./src/components/Block.js
+;// ./src/components/Block.js
 
 
 
@@ -3346,7 +3349,7 @@ class Block extends mix.withBase( external_three_namespaceObject.Object3D )(
 
 }
 
-;// CONCATENATED MODULE: ./src/components/core/InlineComponent.js
+;// ./src/components/core/InlineComponent.js
 /**
 
 Job: nothing yet, but adding a isInline parameter to an inline component
@@ -3369,14 +3372,8 @@ function InlineComponent( Base ) {
 	};
 }
 
-;// CONCATENATED MODULE: ./node_modules/three/examples/jsm/utils/BufferGeometryUtils.js
+;// ./node_modules/three/examples/jsm/utils/BufferGeometryUtils.js
 
-
-function computeTangents() {
-
-	throw new Error( 'BufferGeometryUtils: computeTangents renamed to computeMikkTSpaceTangents.' );
-
-}
 
 function computeMikkTSpaceTangents( geometry, MikkTSpace, negateSign = true ) {
 
@@ -3396,17 +3393,16 @@ function computeMikkTSpaceTangents( geometry, MikkTSpace, negateSign = true ) {
 
 		if ( attribute.normalized || attribute.isInterleavedBufferAttribute ) {
 
-			const srcArray = attribute.isInterleavedBufferAttribute ? attribute.data.array : attribute.array;
-			const dstArray = new Float32Array( attribute.getCount() * attribute.itemSize );
+			const dstArray = new Float32Array( attribute.count * attribute.itemSize );
 
-			for ( let i = 0, j = 0; i < attribute.getCount(); i ++ ) {
+			for ( let i = 0, j = 0; i < attribute.count; i ++ ) {
 
-				dstArray[ j ++ ] = MathUtils.denormalize( attribute.getX( i ), srcArray );
-				dstArray[ j ++ ] = MathUtils.denormalize( attribute.getY( i ), srcArray );
+				dstArray[ j ++ ] = attribute.getX( i );
+				dstArray[ j ++ ] = attribute.getY( i );
 
 				if ( attribute.itemSize > 2 ) {
 
-					dstArray[ j ++ ] = MathUtils.denormalize( attribute.getZ( i ), srcArray );
+					dstArray[ j ++ ] = attribute.getZ( i );
 
 				}
 
@@ -3472,7 +3468,7 @@ function computeMikkTSpaceTangents( geometry, MikkTSpace, negateSign = true ) {
  * @param  {Boolean} useGroups
  * @return {BufferGeometry}
  */
-function mergeBufferGeometries( geometries, useGroups = false ) {
+function mergeGeometries( geometries, useGroups = false ) {
 
 	const isIndexed = geometries[ 0 ].index !== null;
 
@@ -3497,7 +3493,7 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
 
 		if ( isIndexed !== ( geometry.index !== null ) ) {
 
-			console.error( 'THREE.BufferGeometryUtils: .mergeBufferGeometries() failed with geometry at index ' + i + '. All geometries must have compatible attributes; make sure index attribute exists among all geometries, or in none of them.' );
+			console.error( 'THREE.BufferGeometryUtils: .mergeGeometries() failed with geometry at index ' + i + '. All geometries must have compatible attributes; make sure index attribute exists among all geometries, or in none of them.' );
 			return null;
 
 		}
@@ -3508,7 +3504,7 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
 
 			if ( ! attributesUsed.has( name ) ) {
 
-				console.error( 'THREE.BufferGeometryUtils: .mergeBufferGeometries() failed with geometry at index ' + i + '. All geometries must have compatible attributes; make sure "' + name + '" attribute exists among all geometries, or in none of them.' );
+				console.error( 'THREE.BufferGeometryUtils: .mergeGeometries() failed with geometry at index ' + i + '. All geometries must have compatible attributes; make sure "' + name + '" attribute exists among all geometries, or in none of them.' );
 				return null;
 
 			}
@@ -3525,7 +3521,7 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
 
 		if ( attributesCount !== attributesUsed.size ) {
 
-			console.error( 'THREE.BufferGeometryUtils: .mergeBufferGeometries() failed with geometry at index ' + i + '. Make sure all geometries have the same number of attributes.' );
+			console.error( 'THREE.BufferGeometryUtils: .mergeGeometries() failed with geometry at index ' + i + '. Make sure all geometries have the same number of attributes.' );
 			return null;
 
 		}
@@ -3534,7 +3530,7 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
 
 		if ( morphTargetsRelative !== geometry.morphTargetsRelative ) {
 
-			console.error( 'THREE.BufferGeometryUtils: .mergeBufferGeometries() failed with geometry at index ' + i + '. .morphTargetsRelative must be consistent throughout all geometries.' );
+			console.error( 'THREE.BufferGeometryUtils: .mergeGeometries() failed with geometry at index ' + i + '. .morphTargetsRelative must be consistent throughout all geometries.' );
 			return null;
 
 		}
@@ -3543,7 +3539,7 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
 
 			if ( ! morphAttributesUsed.has( name ) ) {
 
-				console.error( 'THREE.BufferGeometryUtils: .mergeBufferGeometries() failed with geometry at index ' + i + '.  .morphAttributes must be consistent throughout all geometries.' );
+				console.error( 'THREE.BufferGeometryUtils: .mergeGeometries() failed with geometry at index ' + i + '.  .morphAttributes must be consistent throughout all geometries.' );
 				return null;
 
 			}
@@ -3553,11 +3549,6 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
 			morphAttributes[ name ].push( geometry.morphAttributes[ name ] );
 
 		}
-
-		// gather .userData
-
-		mergedGeometry.userData.mergedUserData = mergedGeometry.userData.mergedUserData || [];
-		mergedGeometry.userData.mergedUserData.push( geometry.userData );
 
 		if ( useGroups ) {
 
@@ -3573,7 +3564,7 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
 
 			} else {
 
-				console.error( 'THREE.BufferGeometryUtils: .mergeBufferGeometries() failed with geometry at index ' + i + '. The geometry must have either an index or a position attribute' );
+				console.error( 'THREE.BufferGeometryUtils: .mergeGeometries() failed with geometry at index ' + i + '. The geometry must have either an index or a position attribute' );
 				return null;
 
 			}
@@ -3615,11 +3606,11 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
 
 	for ( const name in attributes ) {
 
-		const mergedAttribute = mergeBufferAttributes( attributes[ name ] );
+		const mergedAttribute = mergeAttributes( attributes[ name ] );
 
 		if ( ! mergedAttribute ) {
 
-			console.error( 'THREE.BufferGeometryUtils: .mergeBufferGeometries() failed while trying to merge the ' + name + ' attribute.' );
+			console.error( 'THREE.BufferGeometryUtils: .mergeGeometries() failed while trying to merge the ' + name + ' attribute.' );
 			return null;
 
 		}
@@ -3649,11 +3640,11 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
 
 			}
 
-			const mergedMorphAttribute = mergeBufferAttributes( morphAttributesToMerge );
+			const mergedMorphAttribute = mergeAttributes( morphAttributesToMerge );
 
 			if ( ! mergedMorphAttribute ) {
 
-				console.error( 'THREE.BufferGeometryUtils: .mergeBufferGeometries() failed while trying to merge the ' + name + ' morphAttribute.' );
+				console.error( 'THREE.BufferGeometryUtils: .mergeGeometries() failed while trying to merge the ' + name + ' morphAttribute.' );
 				return null;
 
 			}
@@ -3672,28 +3663,22 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
  * @param {Array<BufferAttribute>} attributes
  * @return {BufferAttribute}
  */
-function mergeBufferAttributes( attributes ) {
+function mergeAttributes( attributes ) {
 
 	let TypedArray;
 	let itemSize;
 	let normalized;
+	let gpuType = - 1;
 	let arrayLength = 0;
 
 	for ( let i = 0; i < attributes.length; ++ i ) {
 
 		const attribute = attributes[ i ];
 
-		if ( attribute.isInterleavedBufferAttribute ) {
-
-			console.error( 'THREE.BufferGeometryUtils: .mergeBufferAttributes() failed. InterleavedBufferAttributes are not supported.' );
-			return null;
-
-		}
-
 		if ( TypedArray === undefined ) TypedArray = attribute.array.constructor;
 		if ( TypedArray !== attribute.array.constructor ) {
 
-			console.error( 'THREE.BufferGeometryUtils: .mergeBufferAttributes() failed. BufferAttribute.array must be of consistent array types across matching attributes.' );
+			console.error( 'THREE.BufferGeometryUtils: .mergeAttributes() failed. BufferAttribute.array must be of consistent array types across matching attributes.' );
 			return null;
 
 		}
@@ -3701,7 +3686,7 @@ function mergeBufferAttributes( attributes ) {
 		if ( itemSize === undefined ) itemSize = attribute.itemSize;
 		if ( itemSize !== attribute.itemSize ) {
 
-			console.error( 'THREE.BufferGeometryUtils: .mergeBufferAttributes() failed. BufferAttribute.itemSize must be consistent across matching attributes.' );
+			console.error( 'THREE.BufferGeometryUtils: .mergeAttributes() failed. BufferAttribute.itemSize must be consistent across matching attributes.' );
 			return null;
 
 		}
@@ -3709,27 +3694,83 @@ function mergeBufferAttributes( attributes ) {
 		if ( normalized === undefined ) normalized = attribute.normalized;
 		if ( normalized !== attribute.normalized ) {
 
-			console.error( 'THREE.BufferGeometryUtils: .mergeBufferAttributes() failed. BufferAttribute.normalized must be consistent across matching attributes.' );
+			console.error( 'THREE.BufferGeometryUtils: .mergeAttributes() failed. BufferAttribute.normalized must be consistent across matching attributes.' );
 			return null;
 
 		}
 
-		arrayLength += attribute.array.length;
+		if ( gpuType === - 1 ) gpuType = attribute.gpuType;
+		if ( gpuType !== attribute.gpuType ) {
+
+			console.error( 'THREE.BufferGeometryUtils: .mergeAttributes() failed. BufferAttribute.gpuType must be consistent across matching attributes.' );
+			return null;
+
+		}
+
+		arrayLength += attribute.count * itemSize;
 
 	}
 
 	const array = new TypedArray( arrayLength );
+	const result = new external_three_namespaceObject.BufferAttribute( array, itemSize, normalized );
 	let offset = 0;
 
 	for ( let i = 0; i < attributes.length; ++ i ) {
 
-		array.set( attributes[ i ].array, offset );
+		const attribute = attributes[ i ];
+		if ( attribute.isInterleavedBufferAttribute ) {
 
-		offset += attributes[ i ].array.length;
+			const tupleOffset = offset / itemSize;
+			for ( let j = 0, l = attribute.count; j < l; j ++ ) {
+
+				for ( let c = 0; c < itemSize; c ++ ) {
+
+					const value = attribute.getComponent( j, c );
+					result.setComponent( j + tupleOffset, c, value );
+
+				}
+
+			}
+
+		} else {
+
+			array.set( attribute.array, offset );
+
+		}
+
+		offset += attribute.count * itemSize;
 
 	}
 
-	return new external_three_namespaceObject.BufferAttribute( array, itemSize, normalized );
+	if ( gpuType !== undefined ) {
+
+		result.gpuType = gpuType;
+
+	}
+
+	return result;
+
+}
+
+/**
+ * @param {BufferAttribute}
+ * @return {BufferAttribute}
+ */
+function deepCloneAttribute( attribute ) {
+
+	if ( attribute.isInstancedInterleavedBufferAttribute || attribute.isInterleavedBufferAttribute ) {
+
+		return deinterleaveAttribute( attribute );
+
+	}
+
+	if ( attribute.isInstancedBufferAttribute ) {
+
+		return new InstancedBufferAttribute().copy( attribute );
+
+	}
+
+	return new BufferAttribute().copy( attribute );
 
 }
 
@@ -3745,7 +3786,7 @@ function interleaveAttributes( attributes ) {
 	let arrayLength = 0;
 	let stride = 0;
 
-	// calculate the the length and type of the interleavedBuffer
+	// calculate the length and type of the interleavedBuffer
 	for ( let i = 0, l = attributes.length; i < l; ++ i ) {
 
 		const attribute = attributes[ i ];
@@ -3890,7 +3931,7 @@ function deinterleaveGeometry( geometry ) {
 }
 
 /**
- * @param {Array<BufferGeometry>} geometry
+ * @param {BufferGeometry} geometry
  * @return {number}
  */
 function estimateBytesUsed( geometry ) {
@@ -3915,7 +3956,7 @@ function estimateBytesUsed( geometry ) {
 /**
  * @param {BufferGeometry} geometry
  * @param {number} tolerance
- * @return {BufferGeometry>}
+ * @return {BufferGeometry}
  */
 function mergeVertices( geometry, tolerance = 1e-4 ) {
 
@@ -3933,30 +3974,45 @@ function mergeVertices( geometry, tolerance = 1e-4 ) {
 
 	// attributes and new attribute arrays
 	const attributeNames = Object.keys( geometry.attributes );
-	const attrArrays = {};
-	const morphAttrsArrays = {};
+	const tmpAttributes = {};
+	const tmpMorphAttributes = {};
 	const newIndices = [];
 	const getters = [ 'getX', 'getY', 'getZ', 'getW' ];
+	const setters = [ 'setX', 'setY', 'setZ', 'setW' ];
 
-	// initialize the arrays
+	// Initialize the arrays, allocating space conservatively. Extra
+	// space will be trimmed in the last step.
 	for ( let i = 0, l = attributeNames.length; i < l; i ++ ) {
 
 		const name = attributeNames[ i ];
+		const attr = geometry.attributes[ name ];
 
-		attrArrays[ name ] = [];
+		tmpAttributes[ name ] = new attr.constructor(
+			new attr.array.constructor( attr.count * attr.itemSize ),
+			attr.itemSize,
+			attr.normalized
+		);
 
-		const morphAttr = geometry.morphAttributes[ name ];
-		if ( morphAttr ) {
+		const morphAttributes = geometry.morphAttributes[ name ];
+		if ( morphAttributes ) {
 
-			morphAttrsArrays[ name ] = new Array( morphAttr.length ).fill().map( () => [] );
+			if ( ! tmpMorphAttributes[ name ] ) tmpMorphAttributes[ name ] = [];
+			morphAttributes.forEach( ( morphAttr, i ) => {
+
+				const array = new morphAttr.array.constructor( morphAttr.count * morphAttr.itemSize );
+				tmpMorphAttributes[ name ][ i ] = new morphAttr.constructor( array, morphAttr.itemSize, morphAttr.normalized );
+
+			} );
 
 		}
 
 	}
 
 	// convert the error tolerance to an amount of decimal places to truncate to
-	const decimalShift = Math.log10( 1 / tolerance );
-	const shiftMultiplier = Math.pow( 10, decimalShift );
+	const halfTolerance = tolerance * 0.5;
+	const exponent = Math.log10( 1 / tolerance );
+	const hashMultiplier = Math.pow( 10, exponent );
+	const hashAdditive = halfTolerance * hashMultiplier;
 	for ( let i = 0; i < vertexCount; i ++ ) {
 
 		const index = indices ? indices.getX( i ) : i;
@@ -3972,7 +4028,7 @@ function mergeVertices( geometry, tolerance = 1e-4 ) {
 			for ( let k = 0; k < itemSize; k ++ ) {
 
 				// double tilde truncates the decimal value
-				hash += `${ ~ ~ ( attribute[ getters[ k ] ]( index ) * shiftMultiplier ) },`;
+				hash += `${ ~ ~ ( attribute[ getters[ k ] ]( index ) * hashMultiplier + hashAdditive ) },`;
 
 			}
 
@@ -3986,26 +4042,27 @@ function mergeVertices( geometry, tolerance = 1e-4 ) {
 
 		} else {
 
-			// copy data to the new index in the attribute arrays
+			// copy data to the new index in the temporary attributes
 			for ( let j = 0, l = attributeNames.length; j < l; j ++ ) {
 
 				const name = attributeNames[ j ];
 				const attribute = geometry.getAttribute( name );
-				const morphAttr = geometry.morphAttributes[ name ];
+				const morphAttributes = geometry.morphAttributes[ name ];
 				const itemSize = attribute.itemSize;
-				const newarray = attrArrays[ name ];
-				const newMorphArrays = morphAttrsArrays[ name ];
+				const newArray = tmpAttributes[ name ];
+				const newMorphArrays = tmpMorphAttributes[ name ];
 
 				for ( let k = 0; k < itemSize; k ++ ) {
 
 					const getterFunc = getters[ k ];
-					newarray.push( attribute[ getterFunc ]( index ) );
+					const setterFunc = setters[ k ];
+					newArray[ setterFunc ]( nextIndex, attribute[ getterFunc ]( index ) );
 
-					if ( morphAttr ) {
+					if ( morphAttributes ) {
 
-						for ( let m = 0, ml = morphAttr.length; m < ml; m ++ ) {
+						for ( let m = 0, ml = morphAttributes.length; m < ml; m ++ ) {
 
-							newMorphArrays[ m ].push( morphAttr[ m ][ getterFunc ]( index ) );
+							newMorphArrays[ m ][ setterFunc ]( nextIndex, morphAttributes[ m ][ getterFunc ]( index ) );
 
 						}
 
@@ -4023,31 +4080,29 @@ function mergeVertices( geometry, tolerance = 1e-4 ) {
 
 	}
 
-	// Generate typed arrays from new attribute arrays and update
-	// the attributeBuffers
+	// generate result BufferGeometry
 	const result = geometry.clone();
-	for ( let i = 0, l = attributeNames.length; i < l; i ++ ) {
+	for ( const name in geometry.attributes ) {
 
-		const name = attributeNames[ i ];
-		const oldAttribute = geometry.getAttribute( name );
+		const tmpAttribute = tmpAttributes[ name ];
 
-		const buffer = new oldAttribute.array.constructor( attrArrays[ name ] );
-		const attribute = new BufferAttribute( buffer, oldAttribute.itemSize, oldAttribute.normalized );
+		result.setAttribute( name, new tmpAttribute.constructor(
+			tmpAttribute.array.slice( 0, nextIndex * tmpAttribute.itemSize ),
+			tmpAttribute.itemSize,
+			tmpAttribute.normalized,
+		) );
 
-		result.setAttribute( name, attribute );
+		if ( ! ( name in tmpMorphAttributes ) ) continue;
 
-		// Update the attribute arrays
-		if ( name in morphAttrsArrays ) {
+		for ( let j = 0; j < tmpMorphAttributes[ name ].length; j ++ ) {
 
-			for ( let j = 0; j < morphAttrsArrays[ name ].length; j ++ ) {
+			const tmpMorphAttribute = tmpMorphAttributes[ name ][ j ];
 
-				const oldMorphAttribute = geometry.morphAttributes[ name ][ j ];
-
-				const buffer = new oldMorphAttribute.array.constructor( morphAttrsArrays[ name ][ j ] );
-				const morphAttribute = new BufferAttribute( buffer, oldMorphAttribute.itemSize, oldMorphAttribute.normalized );
-				result.morphAttributes[ name ][ j ] = morphAttribute;
-
-			}
+			result.morphAttributes[ name ][ j ] = new tmpMorphAttribute.constructor(
+				tmpMorphAttribute.array.slice( 0, nextIndex * tmpMorphAttribute.itemSize ),
+				tmpMorphAttribute.itemSize,
+				tmpMorphAttribute.normalized,
+			);
 
 		}
 
@@ -4064,7 +4119,7 @@ function mergeVertices( geometry, tolerance = 1e-4 ) {
 /**
  * @param {BufferGeometry} geometry
  * @param {number} drawMode
- * @return {BufferGeometry>}
+ * @return {BufferGeometry}
  */
 function toTrianglesDrawMode( geometry, drawMode ) {
 
@@ -4179,13 +4234,6 @@ function toTrianglesDrawMode( geometry, drawMode ) {
  */
 function computeMorphedAttributes( object ) {
 
-	if ( object.geometry.isBufferGeometry !== true ) {
-
-		console.error( 'THREE.BufferGeometryUtils: Geometry is not of type BufferGeometry.' );
-		return null;
-
-	}
-
 	const _vA = new Vector3();
 	const _vB = new Vector3();
 	const _vC = new Vector3();
@@ -4256,9 +4304,9 @@ function computeMorphedAttributes( object ) {
 
 		if ( object.isSkinnedMesh ) {
 
-			object.boneTransform( a, _vA );
-			object.boneTransform( b, _vB );
-			object.boneTransform( c, _vC );
+			object.applyBoneTransform( a, _vA );
+			object.applyBoneTransform( b, _vB );
+			object.applyBoneTransform( c, _vC );
 
 		}
 
@@ -4561,8 +4609,123 @@ function mergeGroups( geometry ) {
 }
 
 
+/**
+ * Modifies the supplied geometry if it is non-indexed, otherwise creates a new,
+ * non-indexed geometry. Returns the geometry with smooth normals everywhere except
+ * faces that meet at an angle greater than the crease angle.
+ *
+ * @param {BufferGeometry} geometry
+ * @param {number} [creaseAngle]
+ * @return {BufferGeometry}
+ */
+function toCreasedNormals( geometry, creaseAngle = Math.PI / 3 /* 60 degrees */ ) {
 
-;// CONCATENATED MODULE: ./src/content/MSDFGlyph.js
+	const creaseDot = Math.cos( creaseAngle );
+	const hashMultiplier = ( 1 + 1e-10 ) * 1e2;
+
+	// reusable vectors
+	const verts = [ new Vector3(), new Vector3(), new Vector3() ];
+	const tempVec1 = new Vector3();
+	const tempVec2 = new Vector3();
+	const tempNorm = new Vector3();
+	const tempNorm2 = new Vector3();
+
+	// hashes a vector
+	function hashVertex( v ) {
+
+		const x = ~ ~ ( v.x * hashMultiplier );
+		const y = ~ ~ ( v.y * hashMultiplier );
+		const z = ~ ~ ( v.z * hashMultiplier );
+		return `${x},${y},${z}`;
+
+	}
+
+	// BufferGeometry.toNonIndexed() warns if the geometry is non-indexed
+	// and returns the original geometry
+	const resultGeometry = geometry.index ? geometry.toNonIndexed() : geometry;
+	const posAttr = resultGeometry.attributes.position;
+	const vertexMap = {};
+
+	// find all the normals shared by commonly located vertices
+	for ( let i = 0, l = posAttr.count / 3; i < l; i ++ ) {
+
+		const i3 = 3 * i;
+		const a = verts[ 0 ].fromBufferAttribute( posAttr, i3 + 0 );
+		const b = verts[ 1 ].fromBufferAttribute( posAttr, i3 + 1 );
+		const c = verts[ 2 ].fromBufferAttribute( posAttr, i3 + 2 );
+
+		tempVec1.subVectors( c, b );
+		tempVec2.subVectors( a, b );
+
+		// add the normal to the map for all vertices
+		const normal = new Vector3().crossVectors( tempVec1, tempVec2 ).normalize();
+		for ( let n = 0; n < 3; n ++ ) {
+
+			const vert = verts[ n ];
+			const hash = hashVertex( vert );
+			if ( ! ( hash in vertexMap ) ) {
+
+				vertexMap[ hash ] = [];
+
+			}
+
+			vertexMap[ hash ].push( normal );
+
+		}
+
+	}
+
+	// average normals from all vertices that share a common location if they are within the
+	// provided crease threshold
+	const normalArray = new Float32Array( posAttr.count * 3 );
+	const normAttr = new BufferAttribute( normalArray, 3, false );
+	for ( let i = 0, l = posAttr.count / 3; i < l; i ++ ) {
+
+		// get the face normal for this vertex
+		const i3 = 3 * i;
+		const a = verts[ 0 ].fromBufferAttribute( posAttr, i3 + 0 );
+		const b = verts[ 1 ].fromBufferAttribute( posAttr, i3 + 1 );
+		const c = verts[ 2 ].fromBufferAttribute( posAttr, i3 + 2 );
+
+		tempVec1.subVectors( c, b );
+		tempVec2.subVectors( a, b );
+
+		tempNorm.crossVectors( tempVec1, tempVec2 ).normalize();
+
+		// average all normals that meet the threshold and set the normal value
+		for ( let n = 0; n < 3; n ++ ) {
+
+			const vert = verts[ n ];
+			const hash = hashVertex( vert );
+			const otherNormals = vertexMap[ hash ];
+			tempNorm2.set( 0, 0, 0 );
+
+			for ( let k = 0, lk = otherNormals.length; k < lk; k ++ ) {
+
+				const otherNorm = otherNormals[ k ];
+				if ( tempNorm.dot( otherNorm ) > creaseDot ) {
+
+					tempNorm2.add( otherNorm );
+
+				}
+
+			}
+
+			tempNorm2.normalize();
+			normAttr.setXYZ( i3 + n, tempNorm2.x, tempNorm2.y, tempNorm2.z );
+
+		}
+
+	}
+
+	resultGeometry.setAttribute( 'normal', normAttr );
+	return resultGeometry;
+
+}
+
+
+
+;// ./src/content/MSDFGlyph.js
 
 
 /**
@@ -4678,7 +4841,7 @@ class MSDFGlyph extends external_three_namespaceObject.PlaneGeometry {
 
 }
 
-;// CONCATENATED MODULE: ./src/content/MSDFText.js
+;// ./src/content/MSDFText.js
 
 
 
@@ -4777,6 +4940,7 @@ function buildText() {
 	const translatedGeom = [];
 
 	this.inlines.forEach( ( inline, i ) => {
+		// const font = this.getFontFamily() ?? 
 
 		translatedGeom[ i ] = new MSDFGlyph( inline, this.getFontFamily() );
 
@@ -4784,7 +4948,7 @@ function buildText() {
 
 	} );
 
-	const mergedGeom = mergeBufferGeometries( translatedGeom );
+	const mergedGeom = mergeGeometries( translatedGeom );
 
 	const mesh = new external_three_namespaceObject.Mesh( mergedGeom, this.getFontMaterial() );
 
@@ -4800,7 +4964,7 @@ function buildText() {
 	buildText
 });
 
-;// CONCATENATED MODULE: ./src/components/core/TextManager.js
+;// ./src/components/core/TextManager.js
 
 
 /**
@@ -4905,7 +5069,7 @@ function TextManager( Base ) {
 
 }
 
-;// CONCATENATED MODULE: ./src/utils/deepDelete.js
+;// ./src/utils/deepDelete.js
 
 
 /** Recursively erase THE CHILDREN of the passed object */
@@ -4931,7 +5095,7 @@ function deepDelete( object3D ) {
 
 /* harmony default export */ const utils_deepDelete = (deepDelete);
 
-;// CONCATENATED MODULE: ./src/components/Text.js
+;// ./src/components/Text.js
 
 
 
@@ -5135,7 +5299,7 @@ class Text extends mix.withBase( external_three_namespaceObject.Object3D )(
 
 }
 
-;// CONCATENATED MODULE: ./src/components/InlineBlock.js
+;// ./src/components/InlineBlock.js
 
 
 
@@ -5278,7 +5442,7 @@ class InlineBlock extends mix.withBase( external_three_namespaceObject.Object3D 
 
 }
 
-;// CONCATENATED MODULE: ./src/utils/Keymaps.js
+;// ./src/utils/Keymaps.js
 /**
 
 Contains key maps for the Keyboard component.
@@ -6004,7 +6168,7 @@ and if not passed tries to detect the language. If not found, it uses the basic 
 
 });
 
-;// CONCATENATED MODULE: ./src/components/Keyboard.js
+;// ./src/components/Keyboard.js
 
 
 
@@ -6349,7 +6513,7 @@ class Keyboard extends mix.withBase( external_three_namespaceObject.Object3D )( 
 
 }
 
-;// CONCATENATED MODULE: ./src/three-mesh-ui.js
+;// ./src/three-mesh-ui.js
 /* global global */
 
 
@@ -6396,16 +6560,16 @@ if ( typeof global !== 'undefined' ) global.ThreeMeshUI = ThreeMeshUI;
 
 /* harmony default export */ const three_mesh_ui = (ThreeMeshUI);
 
-var __webpack_exports__AlignItems = __webpack_exports__.g1;
-var __webpack_exports__Block = __webpack_exports__.gO;
-var __webpack_exports__ContentDirection = __webpack_exports__.km;
-var __webpack_exports__FontLibrary = __webpack_exports__.zV;
-var __webpack_exports__InlineBlock = __webpack_exports__.ol;
-var __webpack_exports__JustifyContent = __webpack_exports__.uM;
-var __webpack_exports__Keyboard = __webpack_exports__.N1;
-var __webpack_exports__Text = __webpack_exports__.xv;
-var __webpack_exports__TextAlign = __webpack_exports__.PH;
-var __webpack_exports__Whitespace = __webpack_exports__.UH;
-var __webpack_exports__default = __webpack_exports__.ZP;
-var __webpack_exports__update = __webpack_exports__.Vx;
+var __webpack_exports__AlignItems = __webpack_exports__.k2;
+var __webpack_exports__Block = __webpack_exports__.eB;
+var __webpack_exports__ContentDirection = __webpack_exports__.dJ;
+var __webpack_exports__FontLibrary = __webpack_exports__.VB;
+var __webpack_exports__InlineBlock = __webpack_exports__.hW;
+var __webpack_exports__JustifyContent = __webpack_exports__.A9;
+var __webpack_exports__Keyboard = __webpack_exports__.s3;
+var __webpack_exports__Text = __webpack_exports__.EY;
+var __webpack_exports__TextAlign = __webpack_exports__.nO;
+var __webpack_exports__Whitespace = __webpack_exports__.Sw;
+var __webpack_exports__default = __webpack_exports__.Ay;
+var __webpack_exports__update = __webpack_exports__.yo;
 export { __webpack_exports__AlignItems as AlignItems, __webpack_exports__Block as Block, __webpack_exports__ContentDirection as ContentDirection, __webpack_exports__FontLibrary as FontLibrary, __webpack_exports__InlineBlock as InlineBlock, __webpack_exports__JustifyContent as JustifyContent, __webpack_exports__Keyboard as Keyboard, __webpack_exports__Text as Text, __webpack_exports__TextAlign as TextAlign, __webpack_exports__Whitespace as Whitespace, __webpack_exports__default as default, __webpack_exports__update as update };
