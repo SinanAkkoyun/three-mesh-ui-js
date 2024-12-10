@@ -2128,6 +2128,12 @@ function MeshUIComponent( Base ) {
 
 		}
 
+		getFontThickness() {
+
+			return this._getProperty( 'fontThickness' ) || 0;
+
+		}
+
 		getFontKerning() {
 
 			return this._getProperty( 'fontKerning' );
@@ -2531,6 +2537,7 @@ function MeshUIComponent( Base ) {
 
 						case 'content' :
 						case 'fontSize' :
+						case 'fontThickness' :
 						case 'fontKerning' :
 						case 'breakOn':
 						case 'whiteSpace':
@@ -2710,6 +2717,7 @@ function MaterialManager( Base ) {
 				u_opacity: { value: this.getFontOpacity() },
 				u_pxRange: { value: this.getFontPXRange() },
 				u_useRGSS: { value: this.getFontSupersampling() },
+				u_thickness: { value: this.getFontThickness() }
 			};
 
 			this.backgroundUniforms = {
@@ -2812,6 +2820,7 @@ function MaterialManager( Base ) {
 			this.textUniforms.u_opacity.value = this.getFontOpacity();
 			this.textUniforms.u_pxRange.value = this.getFontPXRange();
 			this.textUniforms.u_useRGSS.value = this.getFontSupersampling();
+			this.textUniforms.u_thickness.value = this.getFontThickness()
 
 		}
 
@@ -2927,6 +2936,7 @@ uniform vec3 u_color;
 uniform float u_opacity;
 uniform float u_pxRange;
 uniform bool u_useRGSS;
+uniform float u_thickness;
 
 varying vec2 vUv;
 
@@ -2948,8 +2958,7 @@ float screenPxRange() {
 float tap(vec2 offsetUV) {
 	vec3 msd = texture( u_texture, offsetUV ).rgb;
 	float sd = median(msd.r, msd.g, msd.b);
-	float thicknessOffset = -0.1; // Adjust this value for thinner fonts
-	float screenPxDistance = screenPxRange() * (sd - 0.5 + thicknessOffset);
+	float screenPxDistance = screenPxRange() * (sd - 0.5 + u_thickness);
 	float alpha = clamp(screenPxDistance + 0.5, 0.0, 1.0);
 	return alpha;
 }
@@ -5126,6 +5135,8 @@ class Text extends mix.withBase( external_THREE_namespaceObject.Object3D )(
 		super( options );
 
 		this.isText = true;
+
+		// this.fontThickness = options.fontThickness || 0.0
 
 		this.set( options );
 

@@ -35,6 +35,8 @@ export default class Text extends mix.withBase( Object3D )(
 
 		this.isText = true;
 
+		// this.fontThickness = options.fontThickness || 0.0
+
 		this.set( options );
 
 	}

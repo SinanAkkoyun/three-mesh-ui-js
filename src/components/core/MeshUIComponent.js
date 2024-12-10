@@ -130,6 +130,12 @@ export default function MeshUIComponent( Base ) {
 
 		}
 
+		getFontThickness() {
+
+			return this._getProperty( 'fontThickness' ) || 0;
+
+		}
+
 		getFontKerning() {
 
 			return this._getProperty( 'fontKerning' );
@@ -533,6 +539,7 @@ export default function MeshUIComponent( Base ) {
 
 						case 'content' :
 						case 'fontSize' :
+						case 'fontThickness' :
 						case 'fontKerning' :
 						case 'breakOn':
 						case 'whiteSpace':
