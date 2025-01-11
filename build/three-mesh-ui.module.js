@@ -2968,13 +2968,7 @@ float tap(vec2 offsetUV) {
 	float alpha = clamp(screenPxDistance + 0.5, 0.0, 1.0);
 	return alpha;
 }
-
-bool isNotAboveAverage(vec3 color) {
-    // Calculate the average of the RGB components
-    float average = (color.r + color.g + color.b) / 3.0;
-    return average < 0.5;
-}
-
+\
 void main() {
 
 	float alpha;
@@ -3016,22 +3010,21 @@ void main() {
 	if ( alpha < 0.02) discard;
 
 	vec4 originalColor = vec4( u_color, alpha );
+	// gl_FragColor = originalColor;
+	// #include <colorspace_fragment>
 
-	if(isNotAboveAverage(u_color.rgb)) {
-		vec4 beforeTransformation = vec4(0.7, 0.3, 0.1, 1.0);
-		gl_FragColor = beforeTransformation;
-		#include <colorspace_fragment>	// check for colorspace transformation
-		vec4 afterTransformation = gl_FragColor;
 
-		if (distance(beforeTransformation, afterTransformation) > 0.001) {
-			gl_FragColor = linearToOutputTexel(vec4( u_color, pow(alpha, 2.2) ));
-		} else {
-		 gl_FragColor = originalColor;
-		}
+	vec4 beforeTransformation = vec4(0.7, 0.3, 0.1, 1.0);
+	gl_FragColor = beforeTransformation;
+	#include <colorspace_fragment>	// check for colorspace transformation
+	vec4 afterTransformation = gl_FragColor;
+
+	if (distance(beforeTransformation, afterTransformation) > 0.001) {
+		gl_FragColor = linearToOutputTexel(vec4( u_color, (u_color.r < 0.2 && u_color.g < 0.2 && u_color.b < 0.2) ? pow(alpha, 2.2) : pow(alpha, 1.0/2.2) ));
 	} else {
 		gl_FragColor = originalColor;
-		#include <colorspace_fragment>	// correct color space
 	}
+
 
 	#include <clipping_planes_fragment>
 
@@ -3040,18 +3033,35 @@ void main() {
 
 /*
 // apply the opacity
+	alpha *= u_opacity;
 
+	// this is useful to avoid z-fighting when quads overlap because of kerning
+	if ( alpha < 0.02) discard;
 
-	gl_FragColor = vec4( u_color, alpha );
-	vec4 originalColor = gl_FragColor;
-	#include <colorspace_fragment>	// correct color space
-	vec4 correctedColor = gl_FragColor;
+	vec4 originalColor = vec4( u_color, alpha );
+	// gl_FragColor = originalColor;
+	// #include <colorspace_fragment>
 
-	// if (isNotAboveAverage(u_color.rgb) && distance(originalColor, correctedColor) > 0.001) {
-	if (true) {
-		gl_FragColor = linearToOutputTexel(vec4( u_color, pow(alpha, 2.2) ));
-		// outputColor = vec4(0.1, 0.1, 0.1, 1.0);
+	if(u_color.r < 0.2 && u_color.g < 0.2 && u_color.b < 0.2) {
+		vec4 beforeTransformation = vec4(0.7, 0.3, 0.1, 1.0);
+		gl_FragColor = beforeTransformation;
+		#include <colorspace_fragment>	// check for colorspace transformation
+		vec4 afterTransformation = gl_FragColor;
+
+		if (distance(beforeTransformation, afterTransformation) > 0.001) {
+			gl_FragColor = linearToOutputTexel(vec4( u_color, pow(alpha, 2.2) ));
+		} else {
+		 	gl_FragColor = originalColor;
+		}
+	} else {
+		gl_FragColor = originalColor;
+		// gl_FragColor = vec4(originalColor.rgb, pow(alpha, 1.0/2.2));
+		#include <colorspace_fragment>	// correct color space
 	}
+	// gl_FragColor = linearToOutputTexel(vec4( u_color, pow(alpha, 2.2) ));
+	// #include <colorspace_fragment>
+
+	#include <clipping_planes_fragment>
 */
 
 //////////////////////
@@ -3418,7 +3428,7 @@ function InlineComponent( Base ) {
 	};
 }
 
-;// ../three.js/examples/jsm/utils/BufferGeometryUtils.js
+;// ./node_modules/three/examples/jsm/utils/BufferGeometryUtils.js
 
 
 function computeMikkTSpaceTangents( geometry, MikkTSpace, negateSign = true ) {
@@ -3799,7 +3809,7 @@ function mergeAttributes( attributes ) {
 }
 
 /**
- * @param {BufferAttribute} attribute
+ * @param {BufferAttribute}
  * @return {BufferAttribute}
  */
 function deepCloneAttribute( attribute ) {
