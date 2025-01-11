@@ -276,6 +276,12 @@ float tap(vec2 offsetUV) {
 	return alpha;
 }
 
+bool isNotAboveAverage(vec3 color) {
+    // Calculate the average of the RGB components
+    float average = (color.r + color.g + color.b) / 3.0;
+    return average < 0.5;
+}
+
 void main() {
 
 	float alpha;
@@ -316,13 +322,44 @@ void main() {
 	// this is useful to avoid z-fighting when quads overlap because of kerning
 	if ( alpha < 0.02) discard;
 
+	vec4 originalColor = vec4( u_color, alpha );
 
-	gl_FragColor = vec4( u_color, alpha );
+	if(isNotAboveAverage(u_color.rgb)) {
+		vec4 beforeTransformation = vec4(0.7, 0.3, 0.1, 1.0);
+		gl_FragColor = beforeTransformation;
+		#include <colorspace_fragment>	// check for colorspace transformation
+		vec4 afterTransformation = gl_FragColor;
+
+		if (distance(beforeTransformation, afterTransformation) > 0.001) {
+			gl_FragColor = linearToOutputTexel(vec4( u_color, pow(alpha, 2.2) ));
+		} else {
+		 gl_FragColor = originalColor;
+		}
+	} else {
+		gl_FragColor = originalColor;
+		#include <colorspace_fragment>	// correct color space
+	}
 
 	#include <clipping_planes_fragment>
 
 }
 `;
+
+/*
+// apply the opacity
+
+
+	gl_FragColor = vec4( u_color, alpha );
+	vec4 originalColor = gl_FragColor;
+	#include <colorspace_fragment>	// correct color space
+	vec4 correctedColor = gl_FragColor;
+
+	// if (isNotAboveAverage(u_color.rgb) && distance(originalColor, correctedColor) > 0.001) {
+	if (true) {
+		gl_FragColor = linearToOutputTexel(vec4( u_color, pow(alpha, 2.2) ));
+		// outputColor = vec4(0.1, 0.1, 0.1, 1.0);
+	}
+*/
 
 //////////////////////
 // Background shaders

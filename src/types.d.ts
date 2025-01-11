@@ -1,29 +1,32 @@
 import type {Color, Object3D} from "three";
 
+export type BlockObligations = {
+	width: number;
+	height: number;
+}
 export type BlockOptions = {
-    width: number;
-    height: number;
     padding?: number;
     fontFamily?: string;
     fontTexture?: string;
     backgroundColor?: Color;
     backgroundOpacity?: number;
     borderRadius?: number | [topLeft: number, topRight: number, bottomRight: number, bottomLeft: number];
-    // @todo add missing properties
+		// @todo add missing properties
     [property: string]: any;
 }
 
 export declare class Block extends Object3D {
-    constructor(options: BlockOptions);
+    constructor(options: BlockObligations & BlockOptions);
 }
 
-export type TextOptions = {
+export type TextOptions = BlockOptions & {
     // @todo add missing properties
     [property: string]: any;
 }
 
 export declare class Text extends Object3D {
     constructor(options: TextOptions);
+		set(options: TextOptions): void;
 }
 
 export type InlineBlockOptions = {
