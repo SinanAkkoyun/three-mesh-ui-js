@@ -2151,6 +2151,18 @@ function MeshUIComponent( Base ) {
 
 		}
 
+		getGammaCorrectionBlack() {
+
+			return this._getProperty( 'fontGammaCorrectionBlack' ) || 2.2
+
+		}
+
+		getGammaCorrectionWhite() {
+
+			return this._getProperty( 'fontGammaCorrectionWhite' ) || 2.2
+
+		}
+
 		getFontKerning() {
 
 			return this._getProperty( 'fontKerning' );
@@ -2555,6 +2567,8 @@ function MeshUIComponent( Base ) {
 						case 'content' :
 						case 'fontSize' :
 						case 'fontThickness' :
+						case 'fontGammaCorrectionBlack' :
+						case 'fontGammaCorrectionWhite' :
 						case 'fontKerning' :
 						case 'breakOn':
 						case 'whiteSpace':
@@ -2734,7 +2748,9 @@ function MaterialManager( Base ) {
 				u_opacity: { value: this.getFontOpacity() },
 				u_pxRange: { value: this.getFontPXRange() },
 				u_useRGSS: { value: this.getFontSupersampling() },
-				u_thickness: { value: this.getFontThickness() }
+				u_thickness: { value: this.getFontThickness() },
+				u_gammaCorrectionBlack: { value: this.getGammaCorrectionBlack() },
+				u_gammaCorrectionWhite: { value: this.getGammaCorrectionWhite() },
 			};
 
 			this.backgroundUniforms = {
@@ -2838,6 +2854,8 @@ function MaterialManager( Base ) {
 			this.textUniforms.u_pxRange.value = this.getFontPXRange();
 			this.textUniforms.u_useRGSS.value = this.getFontSupersampling();
 			this.textUniforms.u_thickness.value = this.getFontThickness()
+			this.textUniforms.u_gammaCorrectionBlack.value = this.getGammaCorrectionBlack()
+			this.textUniforms.u_gammaCorrectionWhite.value = this.getGammaCorrectionWhite()
 
 		}
 
@@ -2954,6 +2972,8 @@ uniform float u_opacity;
 uniform float u_pxRange;
 uniform bool u_useRGSS;
 uniform float u_thickness;
+uniform float u_gammaCorrectionBlack;
+uniform float u_gammaCorrectionWhite;
 
 varying vec2 vUv;
 
@@ -3020,6 +3040,12 @@ void main() {
 	// this is useful to avoid z-fighting when quads overlap because of kerning
 	if ( alpha < 0.02) discard;
 
+
+
+	// without correction
+	// gl_FragColor = vec4( u_color, alpha );
+
+	// gamma correction
 	vec4 originalColor = vec4( u_color, alpha );
 	// gl_FragColor = originalColor;
 	// #include <colorspace_fragment>
@@ -3031,14 +3057,24 @@ void main() {
 	vec4 afterTransformation = gl_FragColor;
 
 	if (distance(beforeTransformation, afterTransformation) > 0.001) {
-		gl_FragColor = linearToOutputTexel(vec4( u_color, (u_color.r < 0.2 && u_color.g < 0.2 && u_color.b < 0.2) ? pow(alpha, 2.2) : pow(alpha, 1.0/2.2) ));
+
+		gl_FragColor = linearToOutputTexel(vec4( u_color, (u_color.r < 0.2 && u_color.g < 0.2 && u_color.b < 0.2) ? pow(alpha, u_gammaCorrectionBlack) : pow(alpha, 1.0/u_gammaCorrectionWhite) ));
+
+		// if (u_isXR) {
+		// 		// 1.6 for black
+		// 		gl_FragColor = linearToOutputTexel(vec4( u_color, (u_color.r < 0.2 && u_color.g < 0.2 && u_color.b < 0.2) ? pow(alpha, 1.6) : pow(alpha, 1.0/2.2) ));
+		// 		// gl_FragColor = vec4( u_color, alpha );
+		// } else {
+		// 		gl_FragColor = linearToOutputTexel(vec4( u_color, (u_color.r < 0.2 && u_color.g < 0.2 && u_color.b < 0.2) ? pow(alpha, 2.2) : pow(alpha, 1.0/2.2) ));
+		// }
 	} else {
 		gl_FragColor = originalColor;
 	}
 
 
-	#include <clipping_planes_fragment>
 
+
+	#include <clipping_planes_fragment>
 }
 `;
 

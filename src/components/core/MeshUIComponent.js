@@ -136,6 +136,18 @@ export default function MeshUIComponent( Base ) {
 
 		}
 
+		getGammaCorrectionBlack() {
+
+			return this._getProperty( 'fontGammaCorrectionBlack' ) || 2.2
+
+		}
+
+		getGammaCorrectionWhite() {
+
+			return this._getProperty( 'fontGammaCorrectionWhite' ) || 2.2
+
+		}
+
 		getFontKerning() {
 
 			return this._getProperty( 'fontKerning' );
@@ -540,6 +552,8 @@ export default function MeshUIComponent( Base ) {
 						case 'content' :
 						case 'fontSize' :
 						case 'fontThickness' :
+						case 'fontGammaCorrectionBlack' :
+						case 'fontGammaCorrectionWhite' :
 						case 'fontKerning' :
 						case 'breakOn':
 						case 'whiteSpace':

@@ -21,6 +21,9 @@ export declare class Block extends Object3D {
 
 export type TextOptions = BlockOptions & {
     // @todo add missing properties
+		fontThickness?: number,
+		fontGammaCorrectionBlack?: number,
+		fontGammaCorrectionwhite?: number,
     [property: string]: any;
 }
 
